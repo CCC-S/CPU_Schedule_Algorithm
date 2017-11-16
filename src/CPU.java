@@ -66,7 +66,6 @@ public class CPU {
             case 5:
                 return new RoundRobin(processes);
             default:
-                //System.out.println("Illegal Input!");
                 throw new Exception("Illegal Input!");
         }
     }
