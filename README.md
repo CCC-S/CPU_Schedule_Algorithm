@@ -26,7 +26,7 @@ The latter two are called by the first. Besides, at the end of _beginWork_, it p
 PS: In fact, it is not the CPU's work to collecte the infomation of processes.
 
 
-## models/
+## src/models/
 
 ### Schedule.java
 
@@ -42,7 +42,7 @@ It contains all the necessary infomation for a process and defines some ordering
 
 It represent every unit in the Gatte Graph so that simplifies the process of drawing the Gatte Graph. To illustrate, the executing process would record the infomation of its burst period and add in into an _Arraylist<E>_, once the CPU decides to select another process to be extcuted. Thus, drawing the graph simplly equals extracting units from the _Arraylist<E>_.
 
-## scheduleAlgorithm/
+## src/scheduleAlgorithm/
 
 This directory includes 5 forementioned schedule algorithms
 
