@@ -48,7 +48,7 @@ public class ShortestRemainingTimeFirst extends Schedule {
                 currentTime = processes.get(numOfFinished).getArrivalTime();
                 continue;
             }
-            
+
             Collections.sort(arrivedProcess, Process.sortByRunningTime);
 
             startTime = currentTime;

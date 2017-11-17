@@ -46,9 +46,9 @@ It represent every unit in the Gatte Graph so that simplifies the process of dra
 
 This directory includes 5 forementioned schedule algorithms
 
-# Reference
+# References
 
-The framework of this JAVA project references to JiaCheng Hu's work, like the use of _BurstUnit.java_, _CPU.java_.
+The framework of this JAVA project references to JiaCheng Hu's work, like the use of _BurstUnit.java_, _CPU.java_ and abstract class _Schedule.java_.
 
 
 
