@@ -12,7 +12,7 @@ This project implements 5 CPU shedule algorithms:
 
 ### Main.java
 
-The entry point of the program. It creates a new CPU object and begain the work.
+The entry point of the program. It creates a new CPU object and begins the work.
 
 ### CPU.java
 
