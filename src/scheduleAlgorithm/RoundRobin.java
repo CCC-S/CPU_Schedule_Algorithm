@@ -34,6 +34,7 @@ public class RoundRobin extends Schedule {
                     processes.get(i).setRunningTime(processes.get(i).getRunningTime() - slice);
                     currentTime += 2;
 
+                    //check whether the finished process took the full usage of a slice, if not, recovery the Time
                     if (processes.get(i).getRunningTime() <= 0){
                         currentTime -= Math.abs(processes.get(i).getRunningTime());
                         numOfFinished += 1;
@@ -41,15 +42,12 @@ public class RoundRobin extends Schedule {
                     arrayOfEndTime[i] = currentTime;
                     endTime = currentTime;
 
-                    //System.out.printf("here");
-
                     burstUnits.add(new BurstUnit(processes.get(i).getName(), startTime, endTime));   //get a picked process executed
                 }
-                else if (numOfFinished == i){
+                else if (processes.get(i).getRunningTime() > 0 && numOfFinished == i){
                     currentTime += 1;
                 }
             }
-            //System.out.println("numOfFinished = " + numOfFinished);
         }
 
 
