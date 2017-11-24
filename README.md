@@ -48,7 +48,7 @@ This directory includes 5 forementioned schedule algorithms
 
 # References
 
-The framework of this JAVA project references to [JiaCheng Hu][https://github.com/Daiyunfeng]'s work, like the use of _BurstUnit.java_, _CPU.java_ and abstract class _Schedule.java_.
+The framework of this JAVA project references to [JiaCheng Hu](https://github.com/Daiyunfeng)'s work, like the use of _BurstUnit.java_, _CPU.java_ and abstract class _Schedule.java_.
 
 
 
